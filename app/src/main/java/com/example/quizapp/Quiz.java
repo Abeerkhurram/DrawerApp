@@ -135,8 +135,8 @@ public class Quiz extends Fragment {
         optionsRadioGroup.setVisibility(View.GONE);
         nextButton.setVisibility(View.GONE);
         resultTextView.setVisibility(View.VISIBLE);
-        resultTextView.setText("Game Ended. Correct Answers: " + correctAnswers);
-        db.insertResult(new Result("junaid", correctAnswers));
+        resultTextView.setText("Correct Answers: " + correctAnswers);
+        db.insertResult(new Result("Abeer", correctAnswers));
     }
 
     private int getIndex(String targetValue) {

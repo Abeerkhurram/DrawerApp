@@ -16,7 +16,7 @@ import android.widget.Button;
  * Use the {@link Profile#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Profile extends Fragment {
+public class    Profile extends Fragment {
 
     View view;
     Button button;
@@ -71,7 +71,7 @@ public class Profile extends Fragment {
 
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/junaid786-prog/quiz-drawer-app";  // Replace with your desired URL
+                String url = "https://github.com/Abeerkhurram/DrawerApp.git";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
             }
