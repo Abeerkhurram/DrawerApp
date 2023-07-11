@@ -12,16 +12,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Quiz#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class Quiz extends Fragment {
     DBHelper db;
 
     // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -136,7 +132,7 @@ public class Quiz extends Fragment {
         nextButton.setVisibility(View.GONE);
         resultTextView.setVisibility(View.VISIBLE);
         resultTextView.setText("Correct Answers: " + correctAnswers);
-        db.insertResult(new Result("Abeer", correctAnswers));
+        db.insertResult(new Result("User", correctAnswers));
     }
 
     private int getIndex(String targetValue) {
@@ -145,6 +141,6 @@ public class Quiz extends Fragment {
                 return i;
             }
         }
-        return -1; // Return -1 if the target value is not found in the array
+        return -1;
     }
 }
